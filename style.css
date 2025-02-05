@@ -1,0 +1,60 @@
+body {
+    background: linear-gradient(to right, #ff758c, #ff7eb3);
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    color: white;
+    margin: 0;
+    padding: 0;
+    /* overflow: hidden; */
+}
+
+.container {
+    margin-top: 50px;
+}
+
+h1 {
+    font-size: 50px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+p {
+    font-size: 20px;
+}
+
+button {
+    background-color: white;
+    color: #ff758c;
+    padding: 15px 30px;
+    border: none;
+    font-size: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #ffecf2;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Floating Hearts */
+.heart {
+    position: absolute;
+    color: red;
+    font-size: 25px;
+    animation: float 5s infinite;
+}
+
+@keyframes float {
+    0% { transform: translateY(0) rotate(0deg); opacity: 1; }
+    100% { transform: translateY(-100vh) rotate(360deg); opacity: 0; }
+}
+
+#panel {
+    padding: 50px;
+    display: none;
+  }
